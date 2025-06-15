@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    /* 1 rem = 10px / 16px */
+}
+
+:root{
+    --primary_color: #ffab2e;
+    --primary_dark: #df9930;
+    --pure: #f9f9f9;
+    --black: #000;
+    --grey: #c5c5c5;
+    --white: #fff;
+    --gap: 4.8rem;
+}
+
+html,body{
+    font-family: "Inter", serif;
+    font-weight: 400;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.container{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/hero_img.jpeg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/*************/
+/*UILITIES*/
+/*************/
+
+.flex{
+    display: flex;
+}
+
+.align_centre{
+    align-items: center;
+}
+
+.justify_center{
+    justify-content: center;
+}
+
+.justify_between{
+    justify-content: space-between;
+}
+
+/*************/
+/*NAVIGATION*/
+/*************/
+
+.logo{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span{
+    color: var(--primary_color);
+}
+
+.header{
+    padding: 3.6rem 4.8rem;
+}
+
+nav ul{
+    list-style: none;
+    gap: 4.8rem;
+    font-size: 1.8rem;
+    margin-right: 4.8rem;
+}
+
+nav ul li a{
+    color: var(--white);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all .3s;
+}
+
+nav ul li a:hover{
+    color: var(--primary_color);
+}
+
+nav{
+    gap: var(--gap);
+}
+
+.nav_icons{
+    gap: 2rem;
+    font-size: 2.4rem;
+}
